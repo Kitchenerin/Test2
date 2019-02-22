@@ -18,7 +18,7 @@ class PostsTest < ApplicationSystemTestCase
     fill_in "Description", with: @post.description
     fill_in "Email", with: @post.email
     fill_in "Family name", with: @post.family_name
-    fill_in "Name", with: @post.name
+    fill_in "First name", with: @post.first_name
     click_on "Create Post"
 
     assert_text "Post was successfully created"
@@ -33,7 +33,7 @@ class PostsTest < ApplicationSystemTestCase
     fill_in "Description", with: @post.description
     fill_in "Email", with: @post.email
     fill_in "Family name", with: @post.family_name
-    fill_in "Name", with: @post.name
+    fill_in "First name", with: @post.first_name
     click_on "Update Post"
 
     assert_text "Post was successfully updated"
